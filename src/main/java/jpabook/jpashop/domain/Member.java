@@ -22,4 +22,7 @@ public class Member {
 
     @OneToMany(mappedBy = "member") // 이걸 사용하는 순간, 나는 order테이블에 있는 member의 거울일 뿐임을 선언하는 것임.
     private List<Order> orders = new ArrayList<>();
+
+
+
 }
