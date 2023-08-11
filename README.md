@@ -27,3 +27,7 @@ JPA를 이용한 쇼핑몰 개발
 
 ## 회원 엔티티 분석
 ![initial](https://github.com/JisuPark-dev/jpaShop/assets/122674412/55e1f828-7f15-422e-a781-5338a674a946)
+
+
+## 영속성 컨텍스트란?
+
