@@ -60,17 +60,8 @@ public class ItemController {
 
     @PostMapping("/items/{itemId}/edit")
     public String updateItem(@ModelAttribute("form") BookForm form) {
-
         //TODO: 해당 유저가 해당 아이템에 대해서 권한이 있는지 없는지 체크하는 검증로직이 필요함
-        Book book = new Book();
-        book.setId(form.getId());
-        book.setName(form.getName());
-        book.setPrice(form.getPrice());
-        book.setStockQuantity(form.getStockQuantity());
-        book.setAuthor(form.getAuthor());
-        book.setIsbn(form.getIsbn());
-
-        itemService.saveItem(book);
+        itemService.updateItem(form.getId(), form.getName(), form.getPrice(), form.getStockQuantity());
         return "redirect:/items";
     }
 
